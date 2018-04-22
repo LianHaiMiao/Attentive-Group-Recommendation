@@ -26,14 +26,6 @@ python main.py
 
 we put all the papameters in the config.py
 
-
-
-## Parameter Tuning
-
-we put all the papameters in the config.py
-
-
-
 ## Dataset
 
 We provide one processed dataset: CAMRa2011. 
