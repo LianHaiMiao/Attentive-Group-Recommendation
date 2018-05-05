@@ -91,6 +91,8 @@ if __name__ == '__main__':
     # build AGREE model
     agree = AGREE(num_users, num_items, num_group, config.embedding_size, g_m_d, config.drop_ratio)
 
+    # config information
+    print("AGREE at embedding size %d, run Iteration:%d, NDCG and HR at %d" %(config.embedding_size, config.epoch, config.topK))
     # train the model
     for epoch in range(config.epoch):
         agree.train()

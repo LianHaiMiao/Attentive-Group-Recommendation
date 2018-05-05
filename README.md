@@ -16,11 +16,26 @@ We use the framework pytorch.
 - pytorch version:  '0.3.0'
 - python version: '3.5'
 
-## Run The Code
+## Example to run the codes.
+
+Run AGREE:
 
 ```
 python main.py
 ```
+
+After training process, the value of HR and NDCG in the test dataset will be printed in command window after each optimization iteration.
+
+Output:
+
+```
+AGREE at embedding size 32, run Iteration:30, NDCG and HR at 5
+...
+User Iteration 10 [449.8 s]: HR = 0.6216, NDCG = 0.4133, [1.0 s]
+Group Iteration 10 [471.9 s]: HR = 0.5910, NDCG = 0.4005, [23.0 s]
+
+```
+
 
 ## Parameter Tuning
 
