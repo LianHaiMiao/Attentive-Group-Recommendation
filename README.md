@@ -2,7 +2,7 @@
 
 This is our implementation for the paper:
 
-Da Cao, Xiangnan He, Lianhai Miao, Yahui An, Chao Yang & Richang Hong. 2018. Attentive Group Recommendation. In SIGIR
+Da Cao, Xiangnan He, Lianhai Miao, Yahui An, Chao Yang & Richang Hong. 2018. Attentive Group Recommendation. In SIGIR 2018
 
 In order to learn the group interest, we use attention mechanism to learn the aggregation strategy from data in a dynamic way.
 
