@@ -2,14 +2,33 @@
 
 This is our implementation for the paper:
 
-Da Cao, Xiangnan He, Lianhai Miao, Yahui An, Chao Yang & Richang Hong. 2018. Attentive Group Recommendation. In SIGIR 2018
+Da Cao, Xiangnan He, Lianhai Miao, Yahui An, Chao Yang, and Richang Hong. 2018. Attentive Group Recommendation.  In <em>The 41st International ACM SIGIR Conference on Research &#38; Development in Information Retrieval</em> (SIGIR '18). ACM, New York, NY, USA,  645-654.
 
 In order to learn the group interest, we use attention mechanism to learn the aggregation strategy from data in a dynamic way.
 
 **Please cite our SIGIR'18 paper if you use our codes. Thanks!** 
 
-we will provide the BibTeX soon.
+BibTeX:
 
+```
+@inproceedings{Cao:2018:AGR:3209978.3209998,
+ author = {Cao, Da and He, Xiangnan and Miao, Lianhai and An, Yahui and Yang, Chao and Hong, Richang},
+ title = {Attentive Group Recommendation},
+ booktitle = {The 41st International ACM SIGIR Conference on Research \&\#38; Development in Information Retrieval},
+ series = {SIGIR '18},
+ year = {2018},
+ isbn = {978-1-4503-5657-2},
+ location = {Ann Arbor, MI, USA},
+ pages = {645--654},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/3209978.3209998},
+ doi = {10.1145/3209978.3209998},
+ acmid = {3209998},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {atention mechanism, cold-start problem, group recommendation, neural collaborative filtering, recommender systems},
+}
+```
 
 ## Environment Settings
 We use the framework pytorch. 
