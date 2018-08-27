@@ -11,7 +11,7 @@ In order to learn the group interest, we use attention mechanism to learn the ag
 BibTeX:
 
 ```
-@inproceedings{Cao:2018:AGR:3209978.3209998,
+@inproceedings{Cao2018Attentive,
  author = {Cao, Da and He, Xiangnan and Miao, Lianhai and An, Yahui and Yang, Chao and Hong, Richang},
  title = {Attentive Group Recommendation},
  booktitle = {The 41st International ACM SIGIR Conference on Research \&\#38; Development in Information Retrieval},
