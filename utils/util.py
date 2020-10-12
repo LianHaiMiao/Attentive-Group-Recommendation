@@ -55,6 +55,7 @@ class Helper(object):
         users = np.full(len(items), u)
 
         users_var = torch.from_numpy(users)
+        users_var = users_var.long()
         items_var = torch.LongTensor(items)
         if type_m == 'group':
             predictions = model(users_var, None, items_var)
