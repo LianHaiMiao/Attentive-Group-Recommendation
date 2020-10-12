@@ -9,15 +9,14 @@ from model.agree import AGREE
 import torch
 import torch.nn as nn
 import torch.autograd as autograd
-from torch.autograd import Variable
 import torch.optim as optim
-import torch.nn.functional as F
 import numpy as np
 from time import time
 from config import Config
 from utils.util import Helper
 from dataset import GDataset
 
+from tqdm import tqdm
 
 # train the model
 def training(model, train_loader, epoch_id, config, type_m):
@@ -37,7 +36,8 @@ def training(model, train_loader, epoch_id, config, type_m):
     optimizer = optim.RMSprop(model.parameters(), lr)
 
     losses = []
-    for batch_id, (u, pi_ni) in enumerate(train_loader):
+    print('len(train_loader)',len(train_loader))
+    for batch_id, (u, pi_ni) in tqdm(enumerate(train_loader)):
         # Data Load
         user_input = u
         pos_item_input = pi_ni[:, 0]
@@ -59,9 +59,7 @@ def training(model, train_loader, epoch_id, config, type_m):
         loss.backward()
         optimizer.step()
 
-    print('Iteration %d, loss is [%.4f ]' % (epoch_id, np.mean(losses)))
-
-
+    print('Iteration %d, loss is [%.4f ]' % (epoch_id, torch.mean(torch.stack(losses))))
 
 
 def evaluation(model, helper, testRatings, testNegatives, K, type_m):
