@@ -36,7 +36,7 @@ def training(model, train_loader, epoch_id, config, type_m):
     optimizer = optim.RMSprop(model.parameters(), lr)
 
     losses = []
-    print('len(train_loader)',len(train_loader))
+    print('%s train_loader length: %d' % (type_m, len(train_loader)))
     for batch_id, (u, pi_ni) in tqdm(enumerate(train_loader)):
         # Data Load
         user_input = u

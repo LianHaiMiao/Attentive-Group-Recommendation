@@ -51,10 +51,7 @@ class AGREE(nn.Module):
             g_embeds_with_attention = torch.matmul(at_wt, members_embeds)
             group_embeds_pure = self.groupembeds(torch.LongTensor([i]))
             g_embeds = g_embeds_with_attention + group_embeds_pure
-            if group_embeds.dim() == 0:
-                group_embeds = g_embeds
-            else:
-                group_embeds = torch.cat((group_embeds, g_embeds))
+            group_embeds = torch.cat((group_embeds, g_embeds))
 
         element_embeds = torch.mul(group_embeds, item_embeds_full)  # Element-wise product
         new_embeds = torch.cat((element_embeds, group_embeds, item_embeds_full), dim=1)
