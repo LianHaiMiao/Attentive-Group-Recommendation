@@ -32,8 +32,12 @@ BibTeX:
 
 ## Environment Settings
 We use the framework pytorch. 
-- pytorch version:  '0.3.0'
+- pytorch version:  '0.3.0' or '1.x'
 - python version: '3.5'
+
+It's better to use Pytorch 1.x to run the code.
+
+**Thanks [zanshuxun](https://github.com/zanshuxun) for providing the newest pytorch version code.**
 
 ## Example to run the codes.
 
